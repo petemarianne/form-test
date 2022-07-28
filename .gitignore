@@ -1,0 +1,30 @@
+# VSCode project files
+vzhooh.code-workspace
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/extensions.json
+
+# IntelliJ project files
+*.iml
+*.iws
+*.ipr
+.idea/
+
+# Eclipse project file
+.settings/
+.classpath
+.project
+
+# OS
+.DS_Store
+.idea
+*.iml
+
+node_modules
+npm-debug.log
+
+dist/
+packages/
+.report/
+.temp/
