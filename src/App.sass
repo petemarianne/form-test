@@ -1,0 +1,103 @@
+$fontFamily: 'Roboto', sans-serif
+$color: #8bc7ea
+
+*
+  box-sizing: border-box
+
+.App
+  font-family: $fontFamily
+
+  div
+    display: none
+
+    &.result
+      display: block
+      color: white
+      font-size: 18px
+      text-align: center
+
+  form
+    width: 500px
+    margin: 50px auto 20px
+    background: white
+    border-radius: 30px
+    padding: 50px
+
+    input, textarea
+      display: block
+      width: 100%
+      padding: 0 20px
+      background: #e9eff6
+      line-height: 40px
+      border: 2px solid white
+      border-radius: 20px
+      font-family: $fontFamily
+      color: #757575
+
+      &.inputError
+        border: 2px solid red
+
+      &:focus
+        outline: none !important
+        border: 2px solid $color
+        color: #4b4b4b
+
+      &.phone
+        caret-color: transparent
+
+        &.inputError
+          border: 2px solid red
+
+    textarea
+      line-height: 23px
+      padding-top: 7px
+      padding-bottom: 10px
+
+    input.button
+      margin-top: 30px
+      background: $color
+      border: none
+      color: white
+      font-size: 14px
+      cursor: pointer
+      box-shadow: 0 5px #3d7596ff
+
+      &:hover
+        background: #8ac3e5
+
+      &:active
+        box-shadow: 0 3px #4784a8
+        background: #6ca2c5
+        transform: translateY(3px)
+
+    input[disabled]:active
+      box-shadow: 0 5px #3d7596ff
+      background: $color
+      transform: none
+
+    textarea
+      resize: none
+
+    h3
+      margin-top: 0
+      font-family: $fontFamily
+      font-weight: 500
+      font-size: 24px
+      color: #707981
+      text-align: center
+
+    h5
+      margin: 0 0 5px 5px
+      font-family: $fontFamily
+      font-weight: 500
+      font-size: 16px
+      color: #707981
+
+    p
+      color: white
+      font-size: 10px
+      margin: 0 0 10px 0
+      text-align: center
+
+      &.error
+        color: red
